@@ -1,4 +1,4 @@
-# PyQuant · "Ancient-Meets-Modern" Cute & Fresh Photo Skill
+# PyQuanta · "Ancient-Meets-Modern" Cute & Fresh Photo Skill
 
 > 中文版 / Chinese version: [README.zh-CN.md](README.zh-CN.md)
 
@@ -59,7 +59,7 @@ Dependencies: Pillow only (`pip install pillow`), Python ≥ 3.9.
 
 ## ⚖️ Copyright notice (important)
 
-- **Copyright © 2026 (PyQuant)** — Douyin account "Quanty的隔壁工位".
+- **Copyright © 2026 (PyQuanta)** — Douyin account "Quanty的隔壁工位".
 - All documents, scripts and `examples/` sample images in this repo are original works
   by the author (AI-assisted generation; the creative process and recipe constitute this
   skill's content).
