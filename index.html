@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PyQuant-XQX · 小清新萌萌哒「古装穿越现代」写真 Skill</title>
+<style>
+  :root{
+    --bg:#fdfbf7; --ink:#3a3a3a; --muted:#8a8a8a; --line:#ece6dc;
+    --pink:#f7c9d4; --pink-deep:#e98aa3; --green:#bfe3c8; --green-deep:#7cc295;
+    --amber:#f6e2b3; --card:#ffffff; --shadow:0 6px 22px rgba(180,150,120,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--pink-deep);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+
+  /* hero */
+  header{background:linear-gradient(135deg,#fdeef2 0%,#eef7f0 60%,#fdf6e9 100%);
+    border-bottom:1px solid var(--line);padding:64px 0 56px;text-align:center}
+  header .badge{display:inline-block;font-size:13px;letter-spacing:2px;color:var(--pink-deep);
+    border:1px solid var(--pink);border-radius:999px;padding:5px 16px;background:#fff;margin-bottom:18px}
+  header h1{font-size:30px;font-weight:800;letter-spacing:.5px}
+  header p{color:var(--muted);margin-top:14px;font-size:15px;max-width:640px;margin-left:auto;margin-right:auto}
+  .cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:11px 22px;border-radius:999px;font-weight:600;font-size:14px;border:1px solid transparent}
+  .btn.primary{background:var(--pink-deep);color:#fff;box-shadow:var(--shadow)}
+  .btn.ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+
+  section{padding:54px 0}
+  h2{font-size:22px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+  h2 .dot{width:10px;height:10px;border-radius:50%;background:var(--pink-deep);display:inline-block}
+  .lead{color:var(--muted);margin-bottom:28px;font-size:15px}
+
+  /* mood chips */
+  .moods{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .mood{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 14px;text-align:center;box-shadow:var(--shadow)}
+  .mood .e{font-size:26px}
+  .mood h3{font-size:15px;margin:8px 0 4px}
+  .mood span{font-size:12.5px;color:var(--muted);display:block}
+
+  /* gallery */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .18s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(180,150,120,.22)}
+  .card img{width:100%;height:260px;object-fit:cover;display:block;background:#f3eee6}
+  .card .meta{padding:13px 15px}
+  .card .tag{display:inline-block;font-size:11.5px;font-weight:700;color:#fff;border-radius:999px;padding:3px 10px;margin-bottom:7px}
+  .t-fresh{background:var(--green-deep)} .t-happy{background:#e7b24a} .t-play{background:var(--pink-deep)}
+  .t-goof{background:#9b8bd0} .t-contrast{background:#5fb0c4}
+  .card .meta b{font-size:14.5px} .card .meta p{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+  /* steps */
+  .steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+  .step::before{counter-increment:s;content:"0" counter(s);font-weight:800;color:var(--pink-deep);font-size:22px}
+  .step h4{font-size:15px;margin:6px 0 6px} .step p{font-size:13px;color:var(--muted)}
+
+  /* code */
+  pre{background:#2b2b2b;color:#f4f0e8;border-radius:14px;padding:18px 20px;overflow:auto;font-size:13px;line-height:1.6}
+  pre code{font-family:"SFMono-Regular",Consolas,monospace}
+
+  footer{background:#fff;border-top:1px solid var(--line);padding:40px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer .lic{margin-top:10px;font-size:12px}
+  @media(max-width:760px){.moods,.grid,.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.grid,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">PY · PyQuant 原创</div>
+    <h1>小清新萌萌哒「古装穿越现代」写真 Skill</h1>
+    <p>把神话 / 古装角色放进真实的现代日常生活，用日系小清新胶片质感拍出来。
+       威严的角色认真做着最平凡的小事——反差自然产生活泼与萌感，全程治愈系。</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/PyQuant-XQX/PyQuant-XQX.skill" target="_blank" rel="noopener">查看 GitHub 仓库</a>
+      <a class="btn ghost" href="README.zh-CN.md">中文 README</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2><span class="dot"></span>五档情绪</h2>
+    <p class="lead">一组系列图建议 3 档以上轮换，统一胶片质感，成组看才不出戏。</p>
+    <div class="moods">
+      <div class="mood"><div class="e">🌿</div><h3>小清新</h3><span>空气感 · 微风 · 暖阳</span></div>
+      <div class="mood"><div class="e">🍦</div><h3>小确幸</h3><span>小小的满足 · 一口幸福</span></div>
+      <div class="mood"><div class="e">😏</div><h3>俏皮</h3><span>藏不住的坏笑</span></div>
+      <div class="mood"><div class="e">🤪</div><h3>搞怪</h3><span>认真地干傻事</span></div>
+      <div class="mood"><div class="e">😍</div><h3>反差萌</h3><span>极凶外表 × 极软内心</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2><span class="dot"></span>示例图鉴</h2>
+    <p class="lead">9 张原创样图（AI 辅助生成，版权归 PY / PyQuant 所有）。</p>
+    <div class="grid">
+      <div class="card"><img loading="lazy" src="examples/01_小清新_少女花田.jpg" alt="小清新 少女花田">
+        <div class="meta"><span class="tag t-fresh">小清新</span><b>少女花田</b><p>及腰芒草花田 · 野花与冰咖啡</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/02_小清新_行者地铁.jpg" alt="小清新 行者地铁">
+        <div class="meta"><span class="tag t-fresh">小清新</span><b>行者地铁</b><p>清晨地铁 · 靠杆打盹</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/03_小确幸_行者冰淇淋.jpg" alt="小确幸 行者冰淇淋">
+        <div class="meta"><span class="tag t-happy">小确幸</span><b>行者冰淇淋</b><p>便利店门口 · 咬一口满足</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/04_小确幸_少女咖啡馆.jpg" alt="小确幸 少女咖啡馆">
+        <div class="meta"><span class="tag t-happy">小确幸</span><b>少女咖啡馆</b><p>窗边午后 · 与拿铁对望</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/05_俏皮_少女贩卖机.jpg" alt="俏皮 少女贩卖机">
+        <div class="meta"><span class="tag t-play">俏皮</span><b>少女贩卖机</b><p>夜晚贩卖机 · 霓虹坏笑</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/06_俏皮_行者踩水.jpg" alt="俏皮 行者踩水">
+        <div class="meta"><span class="tag t-play">俏皮</span><b>行者踩水</b><p>雨后水洼 · 靴子踩水花</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/07_搞怪_莽汉洗衣店.jpg" alt="搞怪 莽汉洗衣店">
+        <div class="meta"><span class="tag t-goof">搞怪</span><b>莽汉洗衣店</b><p>头顶叠好的一摞衣物</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/08_搞怪_莽汉大西瓜.jpg" alt="搞怪 莽汉大西瓜">
+        <div class="meta"><span class="tag t-goof">搞怪</span><b>莽汉大西瓜</b><p>乡间水果摊 · 炫耀大西瓜</p></div></div>
+      <div class="card"><img loading="lazy" src="examples/09_反差萌_牛魔王娃娃机.jpg" alt="反差萌 牛魔王娃娃机">
+        <div class="meta"><span class="tag t-contrast">反差萌</span><b>牛魔王娃娃机</b><p>娃娃机前的全神贯注</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="dot"></span>六步出货工作流</h2>
+    <p class="lead">从锚点图到带相纸边框的成品，全流程可复现。</p>
+    <div class="steps">
+      <div class="step"><h4>备角色锚点图</h4><p>脸占画面 ≥1/4 的近景照，裁脸 → 方形化 → 放大到 1024×1024。</p></div>
+      <div class="step"><h4>定场景</h4><p>角色 + 现代日常行为 + 真实场景，一张图只讲一个梗。</p></div>
+      <div class="step"><h4>出试稿</h4><p>同一 prompt 出 2–3 张挑最好的，胶片感自带随机性。</p></div>
+      <div class="step"><h4>脸不对就换脸保场景</h4><p>image1=正确脸，image2=待修成图，保住场景只改脸。</p></div>
+      <div class="step"><h4>质检</h4><p>脸部裁出放大拼板复查：脸型 / 眉眼 / 开合 / 接缝 / 调色。</p></div>
+      <div class="step"><h4>裱框 + 注记</h4><p>用 photo_frame.py 叠白相纸边框、竖排注记、底部标题。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2><span class="dot"></span>一键裱框</h2>
+    <p class="lead">纯 Pillow 实现，无其他依赖（Python ≥ 3.9）。文字永远后期叠，AI 写字必乱码。</p>
+    <pre><code>python scripts/photo_frame.py input.png output.png \
+  --ratio 0.055 --crop-bottom 0.06 --bottom-extra 0.9 \
+  --title-in-margin --halo 0.5 \
+  --caption "風にゆれて" --caption2 "はるのいろ" --title "野原の 小さな幸せ"</code></pre>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 PY (PyQuant) · 抖音「PyQuant的隔壁工位」 · 保留所有权利</div>
+    <div class="lic">文档与脚本以 MIT 授权；示例图片版权归作者所有，转载需署名、商用需授权。
+      本仓库不含任何第三方图片素材，示例图为 AI 辅助生成的虚构艺术创作。</div>
+  </div>
+</footer>
+
+</body>
+</html>
