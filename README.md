@@ -1,4 +1,4 @@
-# PyQuant-XQX · "Ancient-Meets-Modern" Cute & Fresh Photo Skill
+# PyQuant · "Ancient-Meets-Modern" Cute & Fresh Photo Skill
 
 > 中文版 / Chinese version: [README.zh-CN.md](README.zh-CN.md)
 
